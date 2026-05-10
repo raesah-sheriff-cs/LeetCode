@@ -8,7 +8,7 @@ class Solution:
             if s[x]!='#':
                 s1.append(s[x])
             else:
-                    s1.pop()
+                s1.pop()
             x=x+1
         while y<=len(t)-1:
             if t[y]!='#':
