@@ -1,7 +1,6 @@
 class Solution(object):
     def countQuadruplets(self, nums):
-       class Solution:
-    def countQuadruplets(self, nums: List[int]) -> int:
+   
         # Our "Sticky Note" to remember differences (d - c) we found on the right
         dic = {}
         n = len(nums)
