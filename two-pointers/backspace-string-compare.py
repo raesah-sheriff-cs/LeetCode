@@ -1,21 +1,20 @@
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
+        l1=len(s)-1
+        l2=len(t)-1
         s1=[]
         s2=[]
-        x=0
-        y=0
-        while x <= len(s)-1:
-            if s[x] != '#':
-                s1.append(s[x])
-            elif s1:  # <--- The Safety Check: Only pop if s1 is NOT empty
-                s1.pop()
-            x = x + 1
-        while y<=len(t)-1:
-            if t[y]!='#':
-                s2.append(t[y])
-            elif s2:
-                s2.pop()
-            y=y+1
-        if s1==s2:
-            return True
-        return False
+    
+        while l1>=0 or l2>=0:
+            if s[l1]!='#':
+                s1.append(s[l1])
+            if t[l2]!='#':
+                s2.append(t[l2])
+            elif s[l1]=='#':
+                l1=l1-1
+            elif t[l2]=='#':
+                l2=l2-1
+            l1=l1-1
+            l2=l2-1
+    print (s1,s2)
+        
