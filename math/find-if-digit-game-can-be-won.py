@@ -7,8 +7,5 @@ class Solution(object):
                 ss+=n
             else:
                 ds+=n
-        print(ss,ds)
-        if ds!=ss:
-           return True
-        return False
-        
+        return ds!=ss:
+           
