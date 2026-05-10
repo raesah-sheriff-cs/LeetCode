@@ -3,7 +3,7 @@ class Solution:
        
         x=0
         y=set()
-        y.add(tuple(O))
+        y.add(tuple([0,0]))
        
         while(x<=len(path)-1):
             if path[x]=='N':
