@@ -8,10 +8,7 @@ class Solution:
             if s[x]!='#':
                 s1.append(s[x])
             else:
-                if len(s1)!=0:
                     s1.pop()
-                else:
-                    return False
             x=x+1
         while y<=len(t)-1:
             if t[y]!='#':
