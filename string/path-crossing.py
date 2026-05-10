@@ -1,6 +1,6 @@
 class Solution:
     def isPathCrossing(self, path: str) -> bool:
-       O=[0,0]
+        O=[0,0]
         x=0
         y=set()
         y.add(tuple(O))
