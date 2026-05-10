@@ -1,9 +1,9 @@
 class Solution:
     def isPathCrossing(self, path: str) -> bool:
-       
+       O=[0,0]
         x=0
         y=set()
-        y.add(tuple([0,0]))
+        y.add(tuple(O))
        
         while(x<=len(path)-1):
             if path[x]=='N':
