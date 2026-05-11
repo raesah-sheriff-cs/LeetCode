@@ -7,5 +7,4 @@ class Solution:
         if len(s)==0:
             return -1
         else:
-            m=max(s)
-        return m
+            return max(s)
