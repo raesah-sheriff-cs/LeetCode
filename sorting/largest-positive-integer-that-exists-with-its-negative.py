@@ -4,7 +4,7 @@ class Solution:
         for n in nums:
             if -n in nums:
                 s.add(n)
-        if len(s)==0:
-            return -1
-        else:
+        if s:
             return max(s)
+        else:
+            return -1
