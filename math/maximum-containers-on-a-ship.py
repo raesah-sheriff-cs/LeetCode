@@ -1,7 +1,7 @@
 class Solution:
     def maxContainers(self, n: int, w: int, maxWeight: int) -> int:
-        x= maxWeight/w
+        x= maxWeight//w
         if x<n*n:
-            return int(x)
+            return x
         else:
             return n*n
